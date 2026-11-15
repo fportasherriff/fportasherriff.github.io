@@ -1144,7 +1144,7 @@ html[data-lang="es"] .vlang{display:none}
     btns.forEach(function(b){b.setAttribute('aria-pressed',b.dataset.set===l)});
     document.querySelectorAll('[data-alt-'+l+']').forEach(function(el){el.alt=el.getAttribute('data-alt-'+l)});
     document.querySelectorAll('[data-aria-'+l+']').forEach(function(el){el.setAttribute('aria-label',el.getAttribute('data-aria-'+l))});
-    document.title=l==='es'?'Francisco Porta · AI Product Manager & Builder':'Francisco Porta · AI Product Manager & Builder';
+    document.title=l==='es'?'Francisco Porta · Gerente de Producto de IA':'Francisco Porta · AI Product Manager & Builder';
     ['vsys','vproto'].forEach(function(vid){var vs=document.getElementById(vid);if(vs){var ns=vs.getAttribute('data-src-'+l);if(vs.getAttribute('src')!==ns){var pl=!vs.paused;vs.setAttribute('src',ns);if(pl){var p=vs.play();if(p&&p.catch)p.catch(function(){})}}}})
   }
   btns.forEach(function(b){b.addEventListener('click',function(){setLang(b.dataset.set)})});
