@@ -109,7 +109,7 @@ h1 .w{display:inline-block;opacity:0;transform:translateY(.35em);animation:wIn .
 .bw-bar b{flex:1;max-width:46%;height:14px;margin-left:auto;margin-right:auto;border-radius:7px;background:#E7EBEF}
 .bw img{width:100%}
 .phone{padding:7px;border-radius:34px;background:#fff;box-shadow:0 0 0 1px rgba(14,33,72,.13),0 36px 60px -36px rgba(14,33,72,.45)}
-.scr{aspect-ratio:390/844;border-radius:28px;overflow-y:auto;overscroll-behavior:contain;scrollbar-width:none;background:#F4F7FA;touch-action:pan-y;cursor:grab;background-size:cover;background-position:top center}
+.scr{aspect-ratio:390/844;border-radius:28px;overflow-y:auto;overscroll-behavior:contain;scrollbar-width:none;background:#F4F7FA;touch-action:pan-y pinch-zoom;cursor:grab;background-size:cover;background-position:top center}
 .scr::-webkit-scrollbar{display:none}
 .scr.fix{cursor:default;overflow:hidden}
 .scr.grab{cursor:grabbing}
@@ -336,6 +336,8 @@ h1 .w{display:inline-block;opacity:0;transform:translateY(.35em);animation:wIn .
 .now .lbl{margin-bottom:12px}
 .vlang{position:absolute;top:14px;left:14px;z-index:3;padding:5px 11px;border-radius:999px;background:rgba(255,255,255,.9);font-size:12.5px;font-weight:600;color:var(--ink)}
 html[data-lang="es"] .vlang{display:none}
+.vlang{pointer-events:none;transition:opacity .3s}
+.vslot.playing .vlang{opacity:0}
 .stage .vslot.sv{margin-top:0}
 .log .lg{box-sizing:border-box;display:grid;grid-template-columns:28px 1fr;gap:10px;align-items:start;width:100%;padding:9px 12px;border-radius:14px}
 .fsx .fview{order:-1}
